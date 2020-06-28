@@ -1,0 +1,54 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+.section-about {
+    padding: 13rem 0;
+     @include respond(tab-land) {
+         padding: 6rem 0;
+     }
+}
+
+.section-benefits {
+    padding: 15rem 0;
+    
+    background-image: linear-gradient(to right bottom, rgba($color-black, .7), rgba($color-primary, .7)), url(/img/bg-img-4.jpg);
+    background-size: cover;
+    background-position: top;
+    transform: skewY(-6deg);
+    margin-top: 8rem;
+    
+    & > * {
+        transform: skewY(6deg);
+    }
+}
+
+.section-abonamente {
+    padding: 20rem 0;
+    @include respond(tab-land) {
+        padding: 12rem 0;
+    }
+}
+
+.section-antrenori {
+    padding: 10rem 0;
+    background-image: linear-gradient(to right top, rgba($color-black, .7), rgba($color-primary, .7)), url(/img/bg-img-1.jpg);
+    background-position: top;
+    background-size: cover;
+    margin-bottom: 5rem;
+    
+}
+
+.contacts {
+    padding: 10rem 0;
+    // background-image: linear-gradient(to right top, rgba($color-black, .7), rgba($color-primary, .7));
+    // margin-top: 10rem;
+    @include respond(phone) {
+        padding: 5rem 0;
+        margin-bottom: -12rem;
+    }
+}
+
+.footer {
+    // padding: 10rem;
+    background-color: $color-black;
+}

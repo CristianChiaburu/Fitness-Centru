@@ -1,0 +1,98 @@
+.contacts {
+position: relative;
+@include respond(phone) {
+    padding: 5rem;
+}
+
+    &__container {
+
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        display: block;
+        justify-content: space-between;
+    
+        @include respond(phone) {
+            margin: 0 auto;
+            position: relative;
+            top: 25rem;
+            width: 40rem;
+        }
+    }
+
+    &__method {
+        width: 25rem;
+        height: 18rem;
+        display: inline-block;
+        background-color: $color-grey-light-1;
+        margin: 4rem;
+        color: $color-black;
+        position: relative;
+        cursor: pointer;
+        box-shadow: 0 2rem 4rem rgba($color-black, .4);
+        border-radius: 0.3rem;
+        @include respond(phone) {
+            
+            width: 6rem;
+            
+        }
+        @include respond(tab-land) {
+            width: 23rem;
+        }
+        @include respond(tab-port) {
+            width: 16rem;
+            height: 15rem;
+        }
+       
+        
+        & i {
+            font-size: 6rem;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            line-height: 18rem;
+            background-image: linear-gradient(to top, $color-black, $color-primary);
+            z-index: 2;
+            color: $color-grey-light-1;
+            transition: all .6s;
+            
+            
+            @include respond(tab-port) {
+                font-size: 4.5rem;
+                line-height: 14rem;
+            }
+            
+            
+        }
+
+        & span {
+            position: absolute;
+            width: 100%;
+            left:0;
+            bottom: 0;
+            padding: 1rem 0;
+            font-size: 1.6rem;
+        }
+        
+        }
+    
+        
+
+
+        &__method i:hover {
+            transform: translateY(-3rem);
+        }
+
+
+
+
+}
+
+.phone {
+    height: 5rem;
+    color: white;
+}

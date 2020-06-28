@@ -1,0 +1,63 @@
+.footer {
+    color: $color-white;
+    position: relative;
+    @include respond(phone) {
+        
+    }
+
+    &__text {
+        padding: 3rem;
+        text-align: left;
+        
+        @include respond(phone) {
+            
+            padding: .3 1;
+            
+        }
+        
+        @include respond(big-desktop) {
+            text-align: center;
+        }
+
+    }
+    &__heading-primary {
+        line-height: 3rem;
+        text-transform: uppercase;
+        width: 100%;
+         
+            font-size: 7rem;
+            font-weight: 400;
+            @include respond(tab-land) {
+                font-size: 5rem;
+                
+                
+            }
+            @media (max-width:43.75em) {
+                font-size: 3.5rem;
+            }
+            @include respond(phone) {
+                font-size: 4rem;
+                
+            }
+            @media (max-width:23.4375em) {
+                font-size: 3rem;
+            }
+            
+        
+    }
+
+    &__logo {
+        height: 15rem;
+    }
+
+    &__program {
+        
+        position: absolute;
+        top: 30%;
+        right: 1rem;
+
+        @include respond(phone){
+            top: 10%;
+        }
+    }
+}
